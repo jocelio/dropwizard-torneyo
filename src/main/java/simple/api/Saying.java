@@ -11,6 +11,7 @@ import javax.persistence.NamedQuery;
 
 
 public class Saying {
+
     private long id;
 
     @Length(max = 3)

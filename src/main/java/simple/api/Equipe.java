@@ -1,5 +1,10 @@
 package simple.api;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -9,6 +14,8 @@ import java.util.Date;
 @Entity
 @Table(name ="equipes")
 @NamedQuery(name="Equipe.findAll", query="SELECT c FROM Equipe c")
+@AllArgsConstructor @NoArgsConstructor
+@Getter @Setter
 public class Equipe {
 
     @Id
@@ -29,51 +36,4 @@ public class Equipe {
     @Column(name = "updated_at")
     private Date updatedAt;
 
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

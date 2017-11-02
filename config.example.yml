@@ -1,13 +1,3 @@
-database:
-  driverClass: com.mysql.jdbc.Driver
-  url: jdbc:mysql://172.17.0.2:3306/torneyo
-  user: user
-  password: password
-  properties:
-    charSet: UTF-8
-    hibernate.dialect: org.hibernate.dialect.MySQLDialect  #org.hibernate.dialect.MySQL5InnoDBDialect
-    hibernate.hbm2ddl.auto: none
-
 logging:
   level: INFO
   loggers:
@@ -15,6 +5,16 @@ logging:
 
 template: Hello, %s!
 defaultName: Stranger
+
+database:
+  driverClass: com.mysql.jdbc.Driver
+  url: jdbc:mysql://172.17.0.2:3306/database
+  user: user
+  password: password
+  properties:
+    charSet: UTF-8
+    hibernate.dialect: org.hibernate.dialect.MySQLDialect  #org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate.hbm2ddl.auto: none
 
 server:
   applicationConnectors:

@@ -1,4 +1,4 @@
-# simple
+# Simple Dropwizard App
 
 How to start the simple application
 ---

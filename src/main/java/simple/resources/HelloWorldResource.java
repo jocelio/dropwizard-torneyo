@@ -3,6 +3,7 @@ package simple.resources;
 import com.codahale.metrics.annotation.Timed;
 import io.dropwizard.hibernate.UnitOfWork;
 import io.dropwizard.jersey.params.LongParam;
+import simple.api.Equipe;
 import simple.db.PlayersDAO;
 import simple.api.Saying;
 
